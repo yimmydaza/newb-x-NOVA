@@ -1,0 +1,44 @@
+name = "Newb X NOVA"
+version = [0, 1, 2]
+min_supported_mc_version = [1, 20, 80]
+description = '''
+§c%w
+§bLovely and vibrant shader for your Minecraft!
+%v
+§3https://devendrn.github.io/newb-shader/
+''' # %w = patch warning, %v = version
+authors = ["Yimmplay", "devendrn"]
+url = "https://devendrn.github.io/newb-shader/"
+uuid = "95f774cf-4afa-73e7-a21a-72146307b1d2" # Use https://www.uuidgenerator.net/version4
+materials = ["Sky", "LegacyCubemap", "Clouds", "EndSky", "SunMoon", "RenderChunk"]
+
+[info] 
+copyright = '''
+Copyright (c) %a
+
+**Important Note:** Redistribution of this resource pack with links other than the official ones provided by the creator is strictly prohibited.
+''' # %a = authors
+credits = '''
+'''
+
+# subpacks are arranged in left to right order
+# right-most subpack is enabled by default
+
+[[subpack]]
+define = "ROUNDED_CLOUDS"
+materials = ["Clouds"]
+description = '''
+Rounded Clouds
+'''
+[[subpack]]
+define = "DEFAULT"
+materials = []
+description = '''
+Default
+'''
+[[subpack]]
+define = "BOX_CLOUDS"
+materials = ["Clouds", "RenderChunk"]
+description = '''
+Vanilla Clouds
+'''
